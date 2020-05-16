@@ -7,6 +7,7 @@ let index = require('../controllers/index')
 /* GET home page. */
 router.get('/', landing.get_landing);
 router.get('/index', index.index);
+router.get('/leads', landing.show_leads);
 
 /* POST email */
 router.post('/', landing.submit_lead);
