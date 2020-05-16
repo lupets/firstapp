@@ -8,6 +8,7 @@ let index = require('../controllers/index')
 router.get('/', landing.get_landing);
 router.get('/index', index.index);
 router.get('/leads', landing.show_leads);
+router.get('/lead/:lead_id', landing.show_lead);
 
 /* POST email */
 router.post('/', landing.submit_lead);
