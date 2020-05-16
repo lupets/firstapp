@@ -8,4 +8,8 @@ let index = require('../controllers/index')
 router.get('/', landing.get_landing);
 router.get('/index', index.index);
 
+/* POST email */
+router.post('/', landing.submit_lead);
+
+
 module.exports = router;
