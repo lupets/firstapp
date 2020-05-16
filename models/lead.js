@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: DataTypes.UUIDV4,
 
             allowNull: false, 
-            parimaryKey: true
+            primaryKey: true
         },
         email: {
             type: DataTypes.STRING,
